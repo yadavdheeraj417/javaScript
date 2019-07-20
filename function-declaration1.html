@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Declaration Example</title>
+	<script type="text/javascript">
+		let age = +prompt("Enter the age?");
+
+		if(age < 18) {
+			//welcome();
+
+			function welcome() {
+				alert("Hello!");
+			}
+			//welcome();
+		} else {
+			function welcome() {
+				alert("Greetings!");
+			}
+		}
+		
+		//Here we're out of curly braces,
+		//so we can not see Funcion Declarations made inside of them
+		welcome(); //Error: welcome is not defined
+	</script>
+</head>
+<body>
+
+</body>
+</html>

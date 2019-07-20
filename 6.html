@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<script type="text/javascript">
+		let login=prompt("Enter user","Admin");
+		if(login=="Admin")
+		{
+			let pass=prompt("Enter password","password");
+			if(pass=="TheMaster")
+			{
+				alert("Welcome");
+			}
+			
+			else if(pass==""||pass==null)
+			{
+				alert("Cancelled");
+			}
+			else
+			{
+				alert("Wrong Password");
+			}
+		}
+		else if(pass==""||pass==null)
+			{
+				alert("Cancelled");
+			}
+		else
+			{
+				alert("I don't know you.");
+			}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function declaration inside of a code block</title>
+	<script type="text/javascript">
+		/*demo to show that a function declaration is only visible inside the code block it is defined*/
+		let age = +prompt("What is your age?");
+		//conditionally declare a function
+		if (age < 18) {
+			function welcome() {
+				alert("Hello!");
+			}
+		} else {
+			function welcome() {
+				alert("Greetings!");
+			}
+		}
+		// ...use it later
+		welcome(); //Error: welcome is not defined
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Callback using function expression</title>
+	<script type="text/javascript">
+		function ask(question, yes, no) {
+			if(confirm(question)) yes()
+			else no();
+		}
+		ask(
+			"Do you agree?",
+			function() { alert("You agreed."); },
+			function() { alert("You canceled the execution."); }
+			);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
