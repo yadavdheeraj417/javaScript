@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computed Properties Exericise</title>
+	<script type="text/javascript">
+		let fruit = prompt("Which fruit to buy");
+		// let bag = {
+		// 	[fruit] : 5//the name of the property is taken from the variable fruit
+		// };
+		//let bag = {};
+		//we can use more complex expressions inside square brackets:
+		let bag = {
+			[fruit + "Computers"] : 5 // bag.appleComputers = 5
+		};
+
+		//take property name from the fruit variable
+		bag[fruit] = 5;
+		alert(bag.apple);//alert 5 if user gives the input as apple
+		alert(bag.appleComputers);//will only give 5 if user input is apple
+		alert(bag[fruit]); // 5 is fruit="user_input"
+	</script>
+</head>
+<body>
+
+</body>
+</html>

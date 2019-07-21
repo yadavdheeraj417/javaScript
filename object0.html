@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects Creation</title>
+	<script type="text/javascript">
+		let user = {
+			name : "Dheera Yadav",
+			age : 24,
+			gender : "male",
+			//We can use multiword property names but they must be quoted.
+			"like birds" : true
+		};
+		user.isAdmin = true;
+		//delete user.age;
+		alert(user.name);
+		alert(user.age);
+		alert(user.gender);
+		alert(user["like birds"]);
+		alert("Now square brackets are used to show the user details.");
+		alert(user["name"]);
+		alert(user["age"]);
+		alert(user["gender"]);
+		let key = prompt("What do you want to know about Dheeraj?", "name");
+		alert(user[key]);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
