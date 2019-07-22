@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordered like an object</title>
+	<script type="text/javascript">
+		// Integer keys that hold integer propeties are sorted automatically
+		let codes = {
+			"49": "Germany",
+			"41": "Switzerland",
+			"44": "Great Britain",
+			"1" : "USA"
+		};
+		// To make the keys to alert in order of their appearance we can make the keys non-integer. Adding a + sign before each code is enough
+		let codes1 = {
+			"+49": "Germany",
+			"+41": "Switzerland",
+			"+44": "Great Britain",
+			"+1" : "USA"
+		};
+		for(let key in codes) {
+			alert(key);
+		}
+		for(let key in codes1) {
+			alert(key);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

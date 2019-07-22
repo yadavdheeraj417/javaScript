@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copying objects</title>
+	<script type="text/javascript">
+		let message = "Hello!";
+		let phrase = message;
+		alert(message);
+		message = message + "Again!";
+		alert(message);
+		alert(phrase);
+		// Primitive values: strings, numbers, booleans- are assigned/copied "as a whole value"
+
+		//Objects are copied as a reference not the whole value is copied
+		// A variable stores not the object itself, but its "address in memory", in other words "a referece" to it.
+		let user = {
+			name: "John"
+		};
+	</script>
+</head>
+<body>
+
+</body>
+</html>

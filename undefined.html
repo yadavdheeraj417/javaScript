@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using in for properties that stores undefined</title>
+	<script type="text/javascript">
+		let obj = {
+			test: undefined,
+			name: "Dheeraj Yadav"
+		};
+		alert(obj.test); //it's undefined, so - no such property
+		alert("test" in obj); //true, the property exist!
+		alert(obj.name);
+		alert("name" in obj);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
