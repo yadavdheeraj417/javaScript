@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello, object</title>
+	<script type="text/javascript">
+		let user = {};
+		user.name = "John";
+		user.surname = "Smith";
+		alert(user["name"]);
+		user.name = "Pete";
+		alert(user.name);
+		delete user.name;
+		alert(user.name); //undefined
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constant Object</title>
+	<script type="text/javascript">
+		const user = {
+			name: "John",
+		};
+		user.age = 25;
+		alert(user.age);
+		/*The const fixes the value of user itself. And here user stores the reference to the same obect all the time. The line (user.age=25;) goes inside the object, it doesn't reassign user.
+		const will set an error if we try to set the value of user to something else.*/
+		// const user = {
+		// 	name: "John",
+		// };
+		// user = {
+		// 	name: "Abhimanyu",
+		// };
+	</script>
+</head>
+<body>
+
+</body>
+</html>

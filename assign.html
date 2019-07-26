@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assign Proerty of Objects</title>
+	<script type="text/javascript">
+		let user = { name: "John" };
+		let permission1 = { canView: true };
+		let permission2 = { canEdit: true };
+		//copying all properties from permission1 and permission2 into user
+		Object.assign(user, permission1, permission2);
+		for(key in user) {
+			alert(user[key]);
+		}
+
+		//If the receiving object has the same name property, it will be overwritten
+		let user1 = { name: "John" };
+
+		//overwriting name, add isAdmin
+		Object.assign(user1, { name: "Pete", isAdmin: true} );
+		alert(user1['name']);
+		//cloning without using for loop
+		let user2 = {
+			name: "Dheeraj Yadav",
+			age: 24
+		};
+		let clone = Object.assign({}, user2);
+		for(key in user2) {
+			alert(user2[key]);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

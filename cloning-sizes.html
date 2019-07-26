@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reference object properties</title>
+	<script type="text/javascript">
+		let user = {
+			name: "John",
+			sizes: {
+				height: 169,
+				width: 50,
+			}
+		};
+		let clone = Object.assign({}, user);
+		alert(user.sizes === clone.sizes); //true if same object
+		//user and clone share same sizes
+		//user.sizes is an object which can be understood with the output of below lines of code
+		user.sizes.width++; //change the width property of user
+		alert(clone.sizes.width); //51
+		user.name = "Pete";
+		alert(user.name);
+		alert(clone.name);
+		user.sizes.height = 60;
+		alert(clone.sizes.height);
+		alert(user.sizes.height + "This is user's changed height");
+		// to prevent the sizes property of user to be not copied as a reference we can use deep cloning which is a method in lodash library of jaavScript, the method is called _.cloneDeep(obj)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
